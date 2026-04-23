@@ -1,84 +1,108 @@
-# Lenguajes de Marcas — Módulo 0373
+# NexHub Coworking
 
-Web corporativa de NexHub Coworking. HTML5, CSS3 y JavaScript vanilla, sin ningún framework externo.
+Proyecto Intermodular · 1.º DAW · Prometeo by The Power · 2025
 
 ---
 
-## Estructura
+NexHub es una plataforma de gestión para un coworking tecnológico ficticio en Madrid. El proyecto reúne los cinco módulos del curso en un sistema coherente: una web pública, una aplicación Java para el administrador y la base de datos que los sostiene.
+
+---
+
+## Estructura del repositorio
 
 ```
-web/
+nexhub-project/
 
-- index.html
-- espacios.html
-- tarifas.html
-- comunidad.html
-- contacto.html
-- assets/
-    - css/style.css
-    - images/favicon.svg
-    - js/main.js
+- 01_Sistemas_Informaticos/
+    - capturas/
+    - README.md
+
+- 02_Lenguaje_de_Marcas/
+    - index.html
+    - espacios.html
+    - tarifas.html
+    - comunidad.html
+    - contacto.html
+    - assets/
+        - css/style.css
+        - images/favicon.svg
+        - js/main.js
+    - README.md
+
+- 03_Programacion_MPO/
+    - src/
+        - Main.java
+        - db/Conexion.java
+        - dao/
+            - SocioDAO.java
+            - EspacioDAO.java
+            - ReservaDAO.java
+            - EmpleadoDAO.java
+        - model/
+            - Persona.java      <-- abstract
+            - Socio.java
+            - Empleado.java
+            - Espacio.java
+            - Reserva.java
+        - service/
+            - SocioService.java
+            - EspacioService.java
+            - ReservaService.java
+            - EmpleadoService.java
+        - controller/
+            - MenuController.java
+        - utils/
+            - CrudService.java  <-- interface genérica
+            - Validador.java
+    - README.md
+
+- 04_Base_de_Datos/
+    - diagramas/
+        - diagrama_ER.drawio
+        - modelo_relacional.drawio
+    - sql/
+        - 01_crear_tablas.sql
+        - 02_insertar_datos.sql
+        - 03_consultas.sql
+    - README.md
+
+- 05_Itinerario_Empleabilidad/
+    - README.md
+
+- README.md
 ```
 
 ---
 
-## Páginas
+## Tecnologías
 
-| Archivo | Contenido |
-|---------|-----------|
-| `index.html` | Hero con imagen del espacio, servicios destacados y tres planes en preview |
-| `espacios.html` | Open Space A y B, Oficina S y M, Sala Alpha, Sala Beta y Cabinas — cada uno con foto |
-| `tarifas.html` | Seis planes con precios y tabla comparativa |
-| `comunidad.html` | Cuatro tipos de miembros, cuatro eventos periódicos y testimonios |
-| `contacto.html` | Formulario validado por JavaScript y datos de contacto |
-
----
-
-## CSS
-
-Todo el sistema de colores, tamaños y radios está en variables CSS al inicio de `style.css`. Si se quiere cambiar el color de acento o el fondo de toda la web, es una sola línea:
-
-```css
-:root {
-  --color-bg:      #0d0f14;
-  --color-surface: #13161e;
-  --color-accent:  #6c63ff;
-  --color-green:   #22d9a0;
-  --color-text:    #e8eaf0;
-  --font-main:     'Segoe UI', system-ui, sans-serif;
-}
-```
-
-Los componentes usan Flexbox y Grid sin clases de utilidad. El CSS está en un único archivo para las cinco páginas.
+| | |
+|--|--|
+| Web | HTML5, CSS3, JavaScript vanilla |
+| Aplicación | Java 24 + JDBC + patrón DAO |
+| Base de datos | MySQL con XAMPP |
+| Versiones | Git y GitHub |
+| IDE | IntelliJ IDEA Community |
 
 ---
 
-## JavaScript
+## Puesta en marcha
 
-`main.js` hace tres cosas concretas y nada más:
+**Base de datos** — ver `04_Base_de_Datos/README.md`
 
-- Abre y cierra el menú en móvil al pulsar el botón hamburguesa.
-- Valida el formulario de contacto antes de enviarlo: campos obligatorios, formato de email con regex, mínimo de 10 caracteres en el mensaje y aceptación de la política de privacidad.
-- Hace scroll suave cuando se pulsa un enlace de anclaje interno.
+**Aplicación Java** — ver `03_Programacion_MPO/README.md`
 
----
-
-## Responsive
-
-`@media (max-width: 1024px)` — rejillas de 3-4 columnas pasan a 2.  
-`@media (max-width: 768px)` — menú hamburguesa, todas las rejillas a 1 columna.  
-`@media (max-width: 480px)` — hero más compacto, botones apilados.
+**Web** — abrir `02_Lenguaje_de_Marcas/index.html` directamente en el navegador
 
 ---
 
-## Imágenes
+## Empresa ficticia
 
-Las fotos vienen de Unsplash (licencia libre) y se cargan desde su CDN. No hay nada que descargar ni instalar. Todas tienen `loading="lazy"`.
-
-El favicon es un SVG en `assets/images/favicon.svg`: fondo oscuro, hexágono con borde en el color accent y la letra N.
+NexHub Coworking — Calle Innovación 42, Madrid. Espacio para freelancers, startups y equipos. Escritorios flexibles, oficinas privadas, salas de reuniones y servicios adicionales por suscripción mensual.
 
 ---
 
-## Abrir
+## Tutores
 
-Doble clic en `index.html`. Funciona en cualquier navegador sin necesidad de servidor.
+Francisco Molpeceres — francisco.molpeceres@thepower.education  
+Miguel Ángel Alayón — miguel.alayon@thepower.education
