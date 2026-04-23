@@ -4,20 +4,16 @@ Proyecto Intermodular · 1.º DAW · Prometeo by The Power · 2025
 
 ---
 
-NexHub es una plataforma de gestión para un coworking tecnológico ficticio en Madrid. El proyecto reúne los cinco módulos del curso en un sistema coherente: una web pública, una aplicación Java para el administrador y la base de datos que los sostiene.
+NexHub es una plataforma de gestión para un coworking tecnológico ficticio en Madrid. El proyecto reúne los módulos del curso en algo que funciona como un todo: una web pública, una aplicación Java para el administrador y la base de datos que los conecta.
 
 ---
 
-## Estructura del repositorio
+## Estructura
 
 ```
 nexhub-project/
 
-- 01_Sistemas_Informaticos/
-    - capturas/
-    - README.md
-
-- 02_Lenguaje_de_Marcas/
+- web/                          # Módulo Lenguajes de Marcas (0373)
     - index.html
     - espacios.html
     - tarifas.html
@@ -27,48 +23,42 @@ nexhub-project/
         - css/style.css
         - images/favicon.svg
         - js/main.js
-    - README.md
 
-- 03_Programacion_MPO/
-    - src/
-        - Main.java
-        - db/Conexion.java
-        - dao/
-            - SocioDAO.java
-            - EspacioDAO.java
-            - ReservaDAO.java
-            - EmpleadoDAO.java
-        - model/
-            - Persona.java      <-- abstract
-            - Socio.java
-            - Empleado.java
-            - Espacio.java
-            - Reserva.java
-        - service/
-            - SocioService.java
-            - EspacioService.java
-            - ReservaService.java
-            - EmpleadoService.java
-        - controller/
-            - MenuController.java
-        - utils/
-            - CrudService.java  <-- interface genérica
-            - Validador.java
-    - README.md
+- src/                          # Módulo Programación (0485) + MPO
+    - Main.java
+    - db/
+        - Conexion.java
+    - dao/
+        - SocioDAO.java         <-- acceso a datos socios
+        - EspacioDAO.java       <-- acceso a datos espacios
+        - ReservaDAO.java       <-- acceso a datos reservas
+        - EmpleadoDAO.java      <-- acceso a datos empleados
+    - model/
+        - Persona.java          <-- abstract
+        - Socio.java
+        - Empleado.java
+        - Espacio.java
+        - Reserva.java
+    - service/
+        - SocioService.java
+        - EspacioService.java
+        - ReservaService.java
+        - EmpleadoService.java
+    - controller/
+        - MenuController.java
+    - utils/
+        - CrudService.java      <-- interface genérica
+        - Validador.java
 
-- 04_Base_de_Datos/
-    - diagramas/
-        - diagrama_ER.drawio
-        - modelo_relacional.drawio
+- bbdd/                         # Módulo Bases de Datos (0484)
     - sql/
         - 01_crear_tablas.sql
         - 02_insertar_datos.sql
         - 03_consultas.sql
-    - README.md
+    - diagrama_ER.drawio        <-- añadir manualmente
 
-- 05_Itinerario_Empleabilidad/
-    - README.md
-
+- SISTEMAS.md                   # Módulo Sistemas Informáticos (0483)
+- EMPLEABILIDAD.md              # Módulo Empleabilidad (1709)
 - README.md
 ```
 
@@ -76,10 +66,10 @@ nexhub-project/
 
 ## Tecnologías
 
-| | |
 |--|--|
 | Web | HTML5, CSS3, JavaScript vanilla |
-| Aplicación | Java 24 + JDBC + patrón DAO |
+| Aplicación | Java 24 + JDBC |
+| Patrón acceso a datos | DAO (Data Access Object) |
 | Base de datos | MySQL con XAMPP |
 | Versiones | Git y GitHub |
 | IDE | IntelliJ IDEA Community |
@@ -88,17 +78,28 @@ nexhub-project/
 
 ## Puesta en marcha
 
-**Base de datos** — ver `04_Base_de_Datos/README.md`
+**Base de datos**
 
-**Aplicación Java** — ver `03_Programacion_MPO/README.md`
+1. Abre XAMPP y arranca MySQL.
+2. En phpMyAdmin crea una base de datos llamada `nexhub_db`.
+3. Importa `bbdd/sql/01_crear_tablas.sql` y después `bbdd/sql/02_insertar_datos.sql`.
 
-**Web** — abrir `02_Lenguaje_de_Marcas/index.html` directamente en el navegador
+**Aplicación Java**
+
+1. Abre IntelliJ y carga la carpeta `src/`.
+2. Añade el driver JDBC: File > Project Structure > Libraries > + > selecciona `mysql-connector-j.jar`.
+3. Edita `src/db/Conexion.java` con tu usuario y contraseña de MySQL.
+4. Ejecuta `Main.java`.
+
+**Web**
+
+Doble clic en `web/index.html`. No necesita servidor.
 
 ---
 
 ## Empresa ficticia
 
-NexHub Coworking — Calle Innovación 42, Madrid. Espacio para freelancers, startups y equipos. Escritorios flexibles, oficinas privadas, salas de reuniones y servicios adicionales por suscripción mensual.
+NexHub Coworking — Calle Innovación 42, Madrid. Espacio para freelancers, startups y equipos. Escritorios flexibles, oficinas privadas, salas de reuniones y servicios por suscripción mensual.
 
 ---
 
