@@ -1,11 +1,6 @@
 <div align="center">
 
-<svg width="48" height="48" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-  <rect width="32" height="32" rx="6" fill="#0a0b0f"/>
-  <polygon points="16,4 26,9.5 26,22.5 16,28 6,22.5 6,9.5" fill="#6c63ff" opacity="0.18"/>
-  <polygon points="16,4 26,9.5 26,22.5 16,28 6,22.5 6,9.5" fill="none" stroke="#6c63ff" stroke-width="1.5"/>
-  <text x="16" y="21" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="13" font-weight="800" fill="#6c63ff">N</text>
-</svg>
+![alt text](logo.png)
 
 
 # NexHub Coworking
