@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexHub Coworking — Espacio para makers, builders y equipos</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon">&#x2B21;</span>
+        <span class="logo__text">Nex<strong>Hub</strong></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link nav__link--active">Inicio</a>
+        <a href="espacios.html" class="nav__link">Espacios</a>
+        <a href="tarifas.html" class="nav__link">Tarifas</a>
+        <a href="comunidad.html" class="nav__link">Comunidad</a>
+        <a href="contacto.html" class="nav__link">Contacto</a>
+      </nav>
+      <button class="btn btn--primary btn--sm" onclick="location.href='contacto.html'">Reservar visita</button>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <svg class="icon-menu" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="2" y1="4" x2="16" y2="4"/><line x1="2" y1="9" x2="16" y2="9"/><line x1="2" y1="14" x2="16" y2="14"/>
+        </svg>
+        <svg class="icon-close" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="3" x2="15" y2="15"/><line x1="15" y1="3" x2="3" y2="15"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text reveal--left">
+        <span class="badge">Madrid · Abierto 24/7</span>
+        <h1 class="hero__title">El espacio donde las ideas se convierten en producto</h1>
+        <p class="hero__subtitle">NexHub es un coworking tecnologico de Madrid para freelancers, startups y equipos que necesitan mas que una silla y conexion a internet.</p>
+        <div class="hero__actions">
+          <a href="tarifas.html" class="btn btn--primary">Ver planes</a>
+          <a href="espacios.html" class="btn btn--outline">Explorar espacios</a>
+        </div>
+      </div>
+      <div class="hero__visual reveal--right">
+        <div class="hero__img-wrap">
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&q=85&fit=crop" alt="Interior de NexHub coworking" loading="eager" />
+        </div>
+        <div class="hero__stats">
+          <div class="stat-pill"><span class="stat-pill__num">120+</span><span class="stat-pill__label">miembros activos</span></div>
+          <div class="stat-pill"><span class="stat-pill__num">6</span><span class="stat-pill__label">salas de reunion</span></div>
+          <div class="stat-pill"><span class="stat-pill__num">1 Gbps</span><span class="stat-pill__label">fibra dedicada</span></div>
+          <div class="stat-pill"><span class="stat-pill__num">24/7</span><span class="stat-pill__label">acceso con tarjeta</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section features">
+    <div class="container">
+      <h2 class="section__title reveal">Todo lo que necesitas para trabajar bien</h2>
+      <div class="features__grid">
+        <div class="feature-card reveal reveal-delay-1">
+          <img class="feature-card__img" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80&fit=crop" alt="Conexion de red" loading="lazy" />
+          <div class="feature-card__body"><h3>Fibra 1 Gbps dedicada</h3><p>Conexion simetrica garantizada con Wi-Fi 6 y ethernet en cada puesto.</p></div>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <img class="feature-card__img" src="https://images.unsplash.com/photo-1547082299-de196ea013d6?w=600&q=80&fit=crop" alt="Monitor y equipo" loading="lazy" />
+          <div class="feature-card__body"><h3>Hardware disponible</h3><p>Monitores 4K, teclados mecanicos y hubs USB-C para todos los miembros.</p></div>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <img class="feature-card__img" src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=600&q=80&fit=crop" alt="Sala de reunion moderna" loading="lazy" />
+          <div class="feature-card__body"><h3>Reservas online</h3><p>Gestiona salas, cabinas y eventos desde la app en menos de un minuto.</p></div>
+        </div>
+        <div class="feature-card reveal reveal-delay-4">
+          <img class="feature-card__img" src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&q=80&fit=crop" alt="Zona de cafe y descanso" loading="lazy" />
+          <div class="feature-card__body"><h3>Cocina y zona lounge</h3><p>Cafe de especialidad ilimitado, snacks y espacio de desconexion.</p></div>
+        </div>
+        <div class="feature-card reveal reveal-delay-5">
+          <img class="feature-card__img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&fit=crop" alt="Acceso seguro con tarjeta" loading="lazy" />
+          <div class="feature-card__body"><h3>Acceso seguro 24/7</h3><p>Tarjeta NFC personal, taquilla privada y camaras en todas las plantas.</p></div>
+        </div>
+        <div class="feature-card reveal reveal-delay-6">
+          <img class="feature-card__img" src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600&q=80&fit=crop" alt="Evento de networking" loading="lazy" />
+          <div class="feature-card__body"><h3>Comunidad tech</h3><p>Eventos semanales, mentorias y red de contactos del sector.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section plans-preview section--alt">
+    <div class="container">
+      <h2 class="section__title reveal">Planes desde <strong>35 €/mes</strong></h2>
+      <p class="section__subtitle reveal">Sin permanencia minima. Sin letra pequeña.</p>
+      <div class="plans__grid">
+        <div class="plan-card reveal reveal-delay-1">
+          <h3>Hot Desk</h3>
+          <p class="plan-card__price">desde <strong>89 €</strong><span>/mes</span></p>
+          <ul class="plan-card__list"><li>Open Space compartido</li><li>WiFi 1 Gbps</li><li>2h sala/mes incluidas</li><li>Lounge y cocina</li></ul>
+          <a href="tarifas.html" class="btn btn--outline btn--sm">Ver detalle</a>
+        </div>
+        <div class="plan-card plan-card--featured reveal reveal-delay-2">
+          <span class="plan-card__badge">Mas popular</span>
+          <h3>Dedicated Desk</h3>
+          <p class="plan-card__price"><strong>199 €</strong><span>/mes</span></p>
+          <ul class="plan-card__list"><li>Puesto fijo + taquilla</li><li>Monitor 4K incluido</li><li>10h sala/mes incluidas</li><li>Domicilio fiscal</li></ul>
+          <a href="tarifas.html" class="btn btn--primary btn--sm">Ver detalle</a>
+        </div>
+        <div class="plan-card reveal reveal-delay-3">
+          <h3>Oficina Privada</h3>
+          <p class="plan-card__price">desde <strong>600 €</strong><span>/mes</span></p>
+          <ul class="plan-card__list"><li>Espacio privado con llave</li><li>Para equipos de 1-12 personas</li><li>20h sala/mes incluidas</li><li>Personalizacion</li></ul>
+          <a href="tarifas.html" class="btn btn--outline btn--sm">Ver detalle</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container cta-section__inner reveal--scale">
+      <h2>¿Quieres conocer el espacio antes de decidir?</h2>
+      <p>Reserva una visita gratuita y te ensenamos todo sin compromiso.</p>
+      <a href="contacto.html" class="btn btn--primary">Solicitar visita gratuita</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__icon">&#x2B21;</span> <strong>NexHub</strong> Coworking
+        <p>Calle Innovacion, 42 · Madrid · 28001</p>
+      </div>
+      <div class="footer__links">
+        <a href="espacios.html">Espacios</a>
+        <a href="tarifas.html">Tarifas</a>
+        <a href="comunidad.html">Comunidad</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <p class="footer__copy">&copy; <span id="footer-year"></span> NexHub Coworking. Proyecto Intermodular DAW.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
