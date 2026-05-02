@@ -1,6 +1,6 @@
 <div align="center">
 
-![alt text](logo-1.png)
+![alt text](logo.png)
 
 
 # NexHub Coworking
