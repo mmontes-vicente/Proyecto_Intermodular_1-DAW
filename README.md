@@ -24,23 +24,37 @@ Web pública  ←——→  App Java  ←——→  MySQL (nexhub_db)
 
 ```
 nexhub-project/
+├── README.md
 │
 ├── 01_Sistemas_Informaticos/
-│   ├── capturas/
-│   └── README.md
+│   ├── README.md
+│   └── capturas/
+│       ├── 01_xampp_activo.png
+│       ├── 02_phpmyadmin_nexhub_db.png
+│       ├── 03_estructura_tabla_socio.png
+│       ├── 04_datos_tabla_socio.png
+│       ├── 05_consulta_join.png
+│       ├── 06_app_menu_principal.png
+│       ├── 07_app_lista_socios.png
+│       └── 08_web_inicio.png  
 │
 ├── 02_Lenguaje_de_Marcas/
-│   ├── index.html
-│   ├── espacios.html
-│   ├── tarifas.html
-│   ├── comunidad.html
-│   ├── contacto.html
-│   └── assets/
-│       ├── css/style.css
-│       ├── images/favicon.svg
-│       └── js/main.js
+│   ├── README.md
+│   └── web_NexHubCoworking/
+│       ├── index.html
+│       ├── espacios.html
+│       ├── tarifas.html
+│       ├── comunidad.html
+│       ├── contacto.html
+│       └── assets/
+│           ├── css/style.css
+│           ├── images/favicon.svg
+│           └── js/main.js
 │
 ├── 03_Programacion_MPO/
+│   ├── README.md
+│   ├── baseDatos/
+│   │   ├── nexhub_db.sql
 │   └── src/
 │       ├── Main.java
 │       ├── db/Conexion.java
@@ -51,9 +65,11 @@ nexhub-project/
 │       └── utils/
 │
 ├── 04_Base_de_Datos/
+│   ├── README.md
 │   ├── diagramas/
 │   │   ├── diagramas_nexhub.drawio
 │   │   └── diagramas_nexhub.png
+│   ├── capturas/
 │   └── sql/
 │       ├── nexhub_db.sql
 │       ├── 01_crear_tablas.sql
@@ -61,7 +77,10 @@ nexhub-project/
 │       └── 03_consultas.sql
 │
 └── 05_Itinerario_Empleabilidad/
-    └── README.md
+    ├── capturas/
+    ├── 01_presentacion_proyecto.md
+    ├── 02_perfil_profesional.md
+    └── 03_reflexion_final.md
 ```
 
 ---
