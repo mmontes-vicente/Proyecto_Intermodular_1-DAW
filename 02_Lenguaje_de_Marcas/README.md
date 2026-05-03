@@ -18,7 +18,7 @@ Web corporativa de NexHub Coworking hecha con HTML5, CSS3 y JavaScript vanilla. 
 ## Estructura
 
 ```
-02_Lenguaje_de_Marcas/
+02_Lenguaje_de_Marcas/web_NexHubCoworking/
 
 - index.html
 - espacios.html
